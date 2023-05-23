@@ -263,7 +263,7 @@
         @media (min-width:320px) {
         .title h1  {
            position: absolute;
-           top:0.3em;
+           top:-0.3em;
            font-family: monospace;
            color: white;
            left: 0.3em;
