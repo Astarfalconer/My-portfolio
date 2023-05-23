@@ -263,10 +263,10 @@
         @media (min-width:320px) {
         .title h1  {
            position: absolute;
-           top:15px;
+           top:-0.3em;
            font-family: monospace;
            color: white;
-           left: 0.7em;
+           left: 0.3em;
            font-size: 4em;
 
        }
@@ -275,10 +275,10 @@
        @media (min-width:320px) { 
         .banner h2 {
            position: absolute;
-           top:-0.5em;
+           top:-1em;
            font-family: monospace;
            color: white;
-           left: 1em;
+           left: 0.5em;
            font-size: 3em;
            }
         }
@@ -286,7 +286,7 @@
        @media (min-width:320px) {
           .navigation a   {
            text-decoration: none;
-           font-size: 4em;
+           font-size: 1em;
            color: white;
            font-family: monospace;
          }
@@ -297,7 +297,7 @@
            display: flex;
            justify-content: space-around;
            position:relative;
-           top:20em;
+           top:5em;
            left:1.6em;
           }
         }
@@ -310,7 +310,7 @@
            top:0%;
            left:0%;
            z-index: 1;
-           padding-bottom: 20em;
+           padding-bottom: 5em;
            border-bottom:0.5em solid rgba(18, 0, 46, 0.836);
           }
 
@@ -321,8 +321,8 @@
       @media (min-width:320px) {
         #profile-pic {
             position: relative;
-            top: 50em;
-            left: 11em;
+            top: 20em;
+            left: 9.5em;
             display:block;
             background-color: black;
             border-radius: 50%;
@@ -335,7 +335,7 @@
      @media (min-width:320px) {
         #intro{
             position: relative;
-            top: 40em;
+            top: 9.5em;
             left:1em;
             color: white;
             border-radius:2%;
@@ -348,13 +348,25 @@
 
     /*smart phone projects page*/
     @media (min-width:320px) {
+        #introduction {
+         font-family: monospace;
+         color: white;
+         position: relative;
+         text-align: center;
+         left: 0.5em;
+         z-index: 0;
+         top:10em;
+     }
+    
+    } 
+    @media (min-width:320px) {
         .project {
             position: relative;
-            top: 30em;
+            top: 10em;
             background-color: rgb(27, 19, 43);
             display: inline-block;
             text-align: center;
-            left: 13em;
+            left: 11em;
             border:solid rgba(18, 0, 46, 0.836);
         }
     }
@@ -365,7 +377,7 @@
         #name {
             font-family: monospace;
             position: relative;
-            top: 50em;
+            top: 10em;
             color: white;
             text-align: center;
            }
@@ -374,7 +386,7 @@
     @media (min-width:320px) {
         .bio {
             position:relative;
-            top: 20em;
+            top: 5em;
             font-size: 2em;
             text-align: center;
            }
@@ -385,7 +397,7 @@
             font-family: monospace;
             color: white;
             position: relative;
-            top: 40em;
+            top: 10em;
             text-align: center;
            }
 
@@ -394,7 +406,7 @@
     @media (min-width:320px) {
     #skills ul {
         position:relative;
-        top: 58em;
+        top: 17em;
         display: flex;
         justify-content: center;
         left:-1em;
@@ -402,16 +414,24 @@
     }
 
     /*smart phone contact page*/
-
+   
     @media (min-width:320px) {
         .contact-me h2 {
             color:white;
             position: relative;
-            top:20em;
+            top:3em;
             font-family: monospace;
             text-align: center;
             font-size: 4em;
         }
+    }
+    @media (min-width:320px) {
+       #list-of-contacts ul{
+           display:flex;
+           justify-content: space-evenly;
+           position:relative;
+           top:15em;
+       }
     }
 
 /* smart phone prophecy */
@@ -422,7 +442,7 @@
      display: flex;
      justify-content: space-around;
      position:relative;
-     top:8.2em;
+     top:2.2em;
      font-size: 3em;
      font-family: monospace;
      color: white;
@@ -433,7 +453,7 @@
   @media (min-width:320px) {
     .Prophecy-navigation a {
         text-decoration: none;
-        font-size: 1em;
+        font-size: 0.5em;
         color: white;
         font-family: monospace;
       }
@@ -444,7 +464,7 @@
     .instruction {
         color:white;
         position: relative;
-        top:14em;
+        top:6em;
         font-size: 2.5em;
         font-family: monospace;
         text-align: center;
@@ -455,7 +475,7 @@
     #mage {
         position: relative;
         left: 14em;
-        top: 40em;
+        top: 13em;
         height: 35em;
     }
 }
@@ -466,7 +486,7 @@
         text-align: center;
         font-size: 2em;
         font-family: monospace;
-        top: 25em;
+        top: 9em;
     }
 }
 
@@ -474,10 +494,11 @@
 
     #selection ul {
         position:relative;
-        top:67em;
+        top:27em;
         display: flex;
         justify-content: space-evenly;
         font-family: monospace;
+        left: -1.8em;
     }
 }
 
