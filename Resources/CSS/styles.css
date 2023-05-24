@@ -1,10 +1,11 @@
 /*universal navigation*/
 .title h1  {
     position: absolute;
-    top:15px;
+    top:-0.3em;
     font-family: monospace;
     color: white;
-    left: 0.7em;
+    left: 0.3em;
+    font-size: 4em;
 
 }
   .banner h2{
@@ -60,22 +61,23 @@
        }
 
    /* Home page */
-    #profile-pic {
-    position: relative;
-    top: 20em;
-    left: 50em;
-    display:block;
-    background-color: black;
-    border-radius: 50%;
-    background-image: url(../Images/kirokaze1.gif);
-    background-size: cover;
-    height: 25em;
+    #joel-pic {
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        top: 15em;
+        background-image: url(../Images/kirokaze1.gif);
+        background-size: cover;
+        height: 20.5em;
    }
+
+   
 
     #intro{
         position: relative;
         top: 10em;
-        left: 15em;
         color: white;
         border-radius:2%;
         display: inline-block;
@@ -84,7 +86,7 @@
         text-align: center;
     }
    /*projects page*/
-    .project h4 {
+    .center-project h4 {
         color: white;
         position:relative;
         bottom:-2em;
@@ -93,25 +95,25 @@
 
     }
 
-    .project ul {
+    .center-project ul {
         position: relative;
         left: -1.8em;
         bottom: 2em;
     }
 
-    .project li {
+    .center-project li {
         color: white;
         font-family: monospace;
     }
 
-    .project img {
+    .center-project img {
         height:2.5em;
         position: relative;
         top:-1.5em;
         left: 0.1em;
     }
 
-    .project a{
+    .center-project a{
         color: white;
         font-family: monospace;
     }
@@ -198,12 +200,6 @@
     text-align: center;
     }
 
-    #mage{
-        position: relative;
-        left: 42em;
-        top: 8em;
-        height: 35em;
-    }
 
     #Prophecy {
         position:relative;
@@ -318,28 +314,35 @@
 
       /*smart phone Home page*/  
 
+    
+
       @media (min-width:320px) {
-        #profile-pic {
-            position: relative;
-            top: 20em;
-            left: 9.5em;
-            display:block;
-            background-color: black;
+        #joel-pic {
+            position:relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
             border-radius: 50%;
+            top: 20em;
             background-image: url(../Images/kirokaze1.gif);
             background-size: cover;
             height: 45em;
-           }
+        }
       }
 
-     @media (min-width:320px) {
+      @media (min-width:320px) {
+        .center-intro {
+            margin: auto;
+            width: 50%;
+
+        }
+      }
+      @media (min-width:320px) {
         #intro{
             position: relative;
             top: 9.5em;
-            left:1em;
             color: white;
             border-radius:2%;
-            display: inline-block;
             font-family: monospace;
             font-size: 2rem;
             text-align: center;
@@ -356,22 +359,24 @@
          left: 0.5em;
          z-index: 0;
          top:10em;
+         font-size: medium;
      }
 
     } 
     
-    
     @media (min-width:320px) {
-        .project {
-            position: relative;
-            top: 10em;
-            background-color: rgb(27, 19, 43);
-            display: inline-block;
-            text-align: center;
-            left: 11em;
-            border:solid rgba(18, 0, 46, 0.836);
+        .center-project {
+        position: relative;
+        top:10em;
+        margin: auto;
+        width:50%;
+        text-align: center;
+        display: inline block;
+        background-color: rgb(27, 19, 43);
+        border: solid rgba(18, 0, 46, 0.836);
         }
     }
+    
 
     /*smart phone About me page*/
 
@@ -379,7 +384,7 @@
         #name {
             font-family: monospace;
             position: relative;
-            top: 50em;
+            top: 10em;
             color: white;
             text-align: center;
            }
@@ -475,13 +480,16 @@
 }
 
 @media (min-width:320px) {
-    #mage {
+    #oracle  {
         position: relative;
-        left: 14em;
-        top: 13em;
+        top:13em;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
         height: 35em;
     }
 }
+
 
 @media (min-width:320px) {
     #Prophecy {
@@ -506,4 +514,214 @@
 }
 
 /*Tablet universal navigation */
-	
+
+/*Tablet home page*/
+@media (min-width:768px) {
+        #joel-pic {
+            position:relative;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            top: 20em;
+            background-image: url(../Images/kirokaze1.gif);
+            background-size: cover;
+            height: 25.5em;
+        }
+      }
+
+
+  /*Tablet Prophecy*/
+
+@media (min-width:768px) {
+    .Prophecy-navigation {
+     display: flex;
+     justify-content: space-around;
+     position:relative;
+     top:2.2em;
+     font-size: 3em;
+     font-family: monospace;
+     color: white;
+     text-decoration: none;
+    }
+  }
+
+  @media (min-width:768px) {
+    .Prophecy-navigation a {
+        text-decoration: none;
+        font-size: 0.5em;
+        color: white;
+        font-family: monospace;
+      }
+  }
+
+
+@media (min-width:768px) {
+    .instruction {
+        color:white;
+        position: relative;
+        top:10em;
+        font-size: 1em;
+        font-family: monospace;
+        text-align: center;
+        }
+}
+
+@media (min-width:768px) {
+    #oracle  {
+        position: relative;
+        top:13em;
+        display: block;
+        margin-left:auto;
+        margin-right: auto;
+        height: 20em;
+    }
+}
+
+@media (min-width:768px) {
+    #Prophecy {
+        position:relative;
+        text-align: center;
+        font-size: 2em;
+        font-family: monospace;
+        top: 9em;
+    }
+}
+
+@media (min-width:768px) {
+
+    #selection ul {
+        position:relative;
+        top:27em;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: monospace;
+        left: -1.8em;
+    }
+}
+
+/*laptop Home page*/
+
+@media (min-width:1024px) {
+    #joel-pic {
+        position:relative;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        top: 15em;
+        background-image: url(../Images/kirokaze1.gif);
+        background-size: cover;
+        height: 20.5em;
+    }
+  }
+
+ @media (min-width:1024px) {
+    #intro{
+        position: relative;
+        top: 9.5em;
+        color: white;
+        border-radius:2%;
+        display: block;
+        font-family: monospace;
+        font-size: 1.5rem;
+        text-align: center;
+ }
+}
+
+/* laptop Projects page*/
+
+@media (min-width:1024px) {
+    #introduction {
+     font-family: monospace;
+     color: white;
+     position: relative;
+     text-align: center;
+     left: 0.5em;
+     z-index: 0;
+     top:10em;
+ }
+
+} 
+
+
+@media (min-width:1024px) {
+    .project {
+        position: relative;
+        top: 10em;
+        background-color: rgb(27, 19, 43);
+        display: inline-block;
+        text-align: center;
+        left: 13em;
+        border:solid rgba(18, 0, 46, 0.836);
+    }
+}
+
+/* laptop contact me page*/
+
+@media (min-width:1024px) {
+    .contact-me h2 {
+        color:white;
+        position: relative;
+        top:3em;
+        font-family: monospace;
+        text-align: center;
+        font-size: 2.5em;
+    }
+}
+
+/*laptop Prophecy page*/
+
+@media (min-width:1024px) {
+    .instruction {
+        color:white;
+        position: relative;
+        top:10em;
+        font-size: 1em;
+        font-family: monospace;
+        text-align: center;
+        }
+}
+
+
+
+@media (min-width:1024px) {
+    #Prophecy {
+        position:relative;
+        text-align: center;
+        font-size: 1.6em;
+        font-family: monospace;
+        top: 9em;
+    }
+}
+
+@media (min-width:1024px) {
+
+    #selection ul {
+        position:relative;
+        top:18em;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: monospace;
+        left: -1.8em;
+    }
+}@media (min-width:1024px) {
+    .Prophecy-navigation {
+     display: flex;
+     justify-content: space-around;
+     position:relative;
+     top:2.2em;
+     font-family: monospace;
+     color: white;
+     text-decoration: none;
+    }
+  }
+
+  @media (min-width:1024px) {
+    .Prophecy-navigation a {
+        text-decoration: none;
+        font-size: 0.5em;
+        color: white;
+        font-family: monospace;
+      }
+  }
