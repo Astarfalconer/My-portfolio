@@ -17,6 +17,11 @@
 
 
 }
+   
+   .navigation a:hover {
+    color: rgb(107, 219, 253);
+   } 
+
    .navigation a   {
     text-decoration: none;
     font-size: 140%;
@@ -86,7 +91,7 @@
         text-align: center;
     }
    /*projects page*/
-    .center-project h4 {
+    #center-project h4 {
         color: white;
         position:relative;
         bottom:-2em;
@@ -95,38 +100,29 @@
 
     }
 
-    .center-project ul {
+    #center-project ul {
         position: relative;
         left: -1.8em;
         bottom: 2em;
     }
 
-    .center-project li {
+    #center-project li {
         color: white;
         font-family: monospace;
     }
 
-    .center-project img {
+    #center-project img {
         height:2.5em;
         position: relative;
         top:-1.5em;
         left: 0.1em;
     }
 
-    .center-project a{
+    #center-project a{
         color: white;
         font-family: monospace;
     }
 
-    .project {
-        position: relative;
-        top: 10em;
-        background-color: rgb(27, 19, 43);
-        display: inline-block;
-        text-align: center;
-        left: 41em;
-        border:solid rgba(18, 0, 46, 0.836);
-    }
 
     #introduction{
         font-family: monospace;
@@ -155,15 +151,9 @@
     text-align: center;
    }
 
-   #skills ul {
-    position:relative;
-    top: 26em;
-    display: flex;
-    justify-content: center;
-    left:-1em;
-   }
 
-   li img{
+
+   .skills img{
     height: 8em;
    }
 
@@ -181,6 +171,10 @@
      justify-content: space-evenly;
      position:relative;
      top:35em;
+    }
+
+    li img {
+        height: 8em;
     }
 
     .contact-me h2 {
@@ -365,7 +359,7 @@
     } 
     
     @media (min-width:320px) {
-        .center-project {
+        #center-project {
         position: relative;
         top:10em;
         margin: auto;
@@ -400,7 +394,7 @@
     }
 
     @media (min-width:320px) {
-        .skills h2{
+        #skills h2{
             font-family: monospace;
             color: white;
             position: relative;
@@ -411,12 +405,12 @@
     }
 
     @media (min-width:320px) {
-    #skills ul {
+    .skills  {
         position:relative;
-        top: 17em;
+        top: 13em;
         display: flex;
         justify-content: center;
-        left:-1em;
+        
        }
     }
 
