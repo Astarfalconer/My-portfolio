@@ -371,7 +371,37 @@
         }
     }
     
+    #center-project h4 {
+        color: white;
+        position:relative;
+        bottom:-2em;
+        top:-1em;
 
+
+    }
+
+    #center-project ul {
+        position: relative;
+        left: -1.8em;
+        bottom: 2em;
+    }
+
+    #center-project li {
+        color: white;
+        font-family: monospace;
+    }
+
+    #center-project img {
+        height:2.5em;
+        position: relative;
+        top:-1.5em;
+        left: 0.1em;
+    }
+
+    #center-project a{
+        color: white;
+        font-family: monospace;
+    }
     /*smart phone About me page*/
 
     @media (min-width:320px) {

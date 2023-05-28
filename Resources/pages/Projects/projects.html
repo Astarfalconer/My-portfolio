@@ -26,10 +26,11 @@
         <div id="introduction">
             <h2>Welcome to my projects page. please feel free to browse my latest work!</h2>
         </div>
+        
         <Article id="center-project">
             <a href="./Prophecy bot/prophecy.html"><h3>THE PROPHECY BOT</h3></a>
-            <p>This project uses javascript conditonals and functions to generate randomized messages<br>
-                in response to prompts selected by the user.</p>
+            <a href="./Prophecy bot/prophecy.html"><p>This project uses javascript conditonals and functions to generate randomized messages<br>
+                in response to prompts selected by the user.</p></a>
             <h4>Technology used</h4>
             <ul>
                 <li>HTML/CSS</li>
@@ -39,10 +40,12 @@
             </ul>
             <img src="../../Images/output-onlinegiftools (1).gif">
         </Article>
+        
         <script>
             const  project = document.getElementById('center-project')
             project.onmouseover= function(){
-                project.style.border = 'solid white' ;  
+                project.style.border = 'solid white' ;
+                project.style.cursor = 'pointer'  
             }
             project.onmouseout = function(){
                 project.style.border = '' ;
