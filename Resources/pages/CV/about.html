@@ -22,6 +22,10 @@
                     <a href="../Contact info/contact.html">contact info</a>
                 </div>
             </nav>
+            <script>
+                
+
+            </script>
         </header>
         <main>
             <div id="name">
@@ -40,14 +44,62 @@
             <h2>PROGRAMMING SKILLS</h2>
            </div>
            <div class="skills">
-                <img class="skill-pic" src="../../Images/html5.png">
-                <img class="skill-pic" src="../../Images/CSS.png">
-                <img class="skill-pic" src="../../Images/javascript-logo.png">
-                <img class="skill-pic" src="../../Images/nodejs-removebg-preview.png">
-                <img class="skill-pic" src="../../Images/git-bash-hd-logo-removebg-preview.png">
+                <img id="HTML" src="../../Images/html5.png">
+                <img id="CSS" src="../../Images/CSS.png">
+                <img id="JS" src="../../Images/javascript-logo.png">
+                <img id="NODE" src="../../Images/nodejs-removebg-preview.png">
+                <img id="GIT" src="../../Images/git-bash-hd-logo-removebg-preview.png">
            </div>
+           <script>
+            let HTML = document.getElementById('HTML');
+            let CSSp = document.getElementById('CSS');
+            let JS = document.getElementById('JS');
+            let NODE = document.getElementById('NODE');
+            let GIT = document.getElementById('GIT');
+            
+            let htmlHover = () => {
+                HTML.style.height = '10em'
+            };
+
+           
+            let cssHover = () => {
+                CSSp.style.height = '10em'
+            };
+            
+            let jsHover = () => {
+                JS.style.height = '10em'
+            };
+            
+            let nodeHover = () => {
+                NODE.style.height = '10em'
+            };
+
+            let gitHover = () => {
+                GIT.style.height = '10em'
+            };
+            
+            HTML.onmouseover = htmlHover;
+            HTML.onmouseout = function () {
+                HTML.style.height = '';
+            };
+            CSSp.onmouseover = cssHover;
+            CSSp.onmouseout = function () {
+                CSSp.style.height = '';
+            };
+            JS.onmouseover = jsHover;
+            JS.onmouseout = function () {
+                JS.style.height = '';
+            };
+            NODE.onmouseover = nodeHover;
+            NODE.onmouseout = function () {
+                NODE.style.height = '';
+            };
+            GIT.onmouseover = gitHover;
+            GIT.onmouseout = function () {
+                GIT.style.height = '';
+            };
+        </script>
         </main>
-      
-        <script src="../../JavaScript/main.js"></script>
+    
     </body>
 </html>   

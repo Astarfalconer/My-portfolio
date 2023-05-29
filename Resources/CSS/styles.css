@@ -76,6 +76,7 @@
         background-image: url(../Images/kirokaze1.gif);
         background-size: cover;
         height: 20.5em;
+        transition: border 0.2s ease;
    }
 
    
@@ -155,6 +156,7 @@
 
    .skills img{
     height: 8em;
+    transition: 0.4s ease;
    }
 
    .bio {
@@ -193,6 +195,8 @@
     font-family: monospace;
     text-align: center;
     }
+
+ 
 
 
     #Prophecy {
@@ -368,6 +372,7 @@
         display: inline block;
         background-color: rgb(27, 19, 43);
         border: solid rgba(18, 0, 46, 0.836);
+        transition: border 0.3s ease;
         }
     }
     
