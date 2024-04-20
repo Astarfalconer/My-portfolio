@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            projects
+        </title>
+        <link rel="stylesheet" href="../../CSS/styles.css">
+        <link rel="stylesheet" href="projects.css">
+    </head>
+    <body>
+        <header class="banner">
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+            <nav class="navigation">
+                <div>
+                    <a href="../../../index.html">Home</a>
+                </div>
+                <div>
+                    <a href="../CV/about.html">About me</a>
+                </div>
+                <div>
+                    <a href="../Contact info/contact.html">contact info</a>
+                </div>
+            </nav>
+        </header>
+        <div id="introduction">
+            <h2>Welcome to my projects page. please feel free to browse my latest work!</h2>
+        </div>
+        
+        <Article id="center-project">
+            <a href="./Prophecy bot/prophecy.html"><h3>THE PROPHECY BOT</h3></a>
+            <a href="./Prophecy bot/prophecy.html"><p>This project uses javascript conditonals and functions to generate randomized messages<br>
+                in response to prompts selected by the user.</p></a>
+            <a href="./Prophecy bot/prophecy.html"><h4>Technology used</h4></a>
+            <a href="./Prophecy bot/prophecy.html"><ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+                <li>Command line and file navigator</li>
+            </ul></a>
+            <a href="./Prophecy bot/prophecy.html"><img src="../../Images/output-onlinegiftools (1).gif"></a>
+        </Article>
+        
+        <script>
+            const  project = document.getElementById('center-project')
+            project.onmouseover= function(){
+                project.style.border = 'solid white' ;
+                project.style.cursor = 'pointer' 
+                 
+            }
+            project.onmouseout = function(){
+                project.style.border = '' ;
+            }
+        </script>
+        <script src="../../JavaScript/main.js"></script>
+    </body>
+</html>    
