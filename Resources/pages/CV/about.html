@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About me
+        </title>
+        <link rel="stylesheet" href="../../CSS/styles.css">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <header class="banner">
+            <div class="title">
+                <h1>ABOUT ME</h1>
+            </div>
+            <nav class="navigation">
+                <div>
+                    <a href="../../../index.html">Home</a>
+                </div>
+                <div>
+                    <a href="../Projects/projects.html">Projects</a>
+                </div>
+                <div>
+                    <a href="../Contact info/contact.html">contact info</a>
+                </div>
+            </nav>
+            <script>
+                
+
+            </script>
+        </header>
+        <main>
+            <div id="name">
+                <h2>Joel Falconer</h2>
+            </div>
+            <article class="bio">
+                <p>Hi I'm joel,Drama theatre arts major, <br>actor writer and software developer.<br>
+                Anything I'm interested in I put my full attention to. <br>My current focus is full stack development<br>
+                as I like to be involved in a project no matter what aspect.
+                <br>
+                <br>
+                Though I'm not working on plays <br>and sets anymore, I am still a creative <br>
+                who now uses prior skills on coding projects.</p>
+           </article>
+           <div id="skills">
+            <h2>PROGRAMMING SKILLS</h2>
+           </div>
+           <div class="skills">
+                <img id="HTML" src="../../Images/html5.png">
+                <img id="CSS" src="../../Images/CSS.png">
+                <img id="JS" src="../../Images/javascript-logo.png">
+                <img id="NODE" src="../../Images/nodejs-removebg-preview.png">
+                <img id="GIT" src="../../Images/git-bash-hd-logo-removebg-preview.png">
+           </div>
+           <script>
+            let HTML = document.getElementById('HTML');
+            let CSSp = document.getElementById('CSS');
+            let JS = document.getElementById('JS');
+            let NODE = document.getElementById('NODE');
+            let GIT = document.getElementById('GIT');
+            
+            let htmlHover = () => {
+                HTML.style.height = '10em'
+            };
+
+           
+            let cssHover = () => {
+                CSSp.style.height = '10em'
+            };
+            
+            let jsHover = () => {
+                JS.style.height = '10em'
+            };
+            
+            let nodeHover = () => {
+                NODE.style.height = '10em'
+            };
+
+            let gitHover = () => {
+                GIT.style.height = '10em'
+            };
+            
+            HTML.onmouseover = htmlHover;
+            HTML.onmouseout = function () {
+                HTML.style.height = '';
+            };
+            CSSp.onmouseover = cssHover;
+            CSSp.onmouseout = function () {
+                CSSp.style.height = '';
+            };
+            JS.onmouseover = jsHover;
+            JS.onmouseout = function () {
+                JS.style.height = '';
+            };
+            NODE.onmouseover = nodeHover;
+            NODE.onmouseout = function () {
+                NODE.style.height = '';
+            };
+            GIT.onmouseover = gitHover;
+            GIT.onmouseout = function () {
+                GIT.style.height = '';
+            };
+        </script>
+        </main>
+    
+    </body>
+</html>   
