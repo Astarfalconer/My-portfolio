@@ -25,10 +25,11 @@
 }
 #line{
     background-color: white;
-    width: 100em;
+    width: 53em;
     height: 3px;
     position:relative;
     top:33em;
+    left:11em;
 }
 
 .Home-navigation {
@@ -36,21 +37,35 @@ width: 200px;
 height: 100px;
 display: flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: space-between;
+gap: 2em;
 position:relative;
 top:34em;
 left:10.6em;
 }
 .Home-navigation a {
 text-decoration: none;
-font-size: 200%;
-color: white;
-font-family:fantasy;
+font-size: 150%;
+font-weight: lighter;
+color:white;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 transition: ease-in-out 0.3s;
 }
 .Home-navigation a:hover {
-    font-size: 230%;
+    font-size: 170%;
    } 
+
+    a::after {
+    content: "";
+    width:0em;
+    height: 0.1rem;
+    display: block;
+    background-color: aliceblue;
+    transition: 0.2s;
+   }
+   a:hover::after {
+    width:5em;
+   }
 .center-intro{
     position:relative;
     width: 13em;

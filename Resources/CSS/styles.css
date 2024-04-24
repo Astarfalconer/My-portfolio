@@ -1,53 +1,98 @@
 /*universal navigation*/
-.title h1  {
-    position: absolute;
-    top:-0.3em;
-    font-family: monospace;
-    color: white;
-    left: 0.3em;
-    font-size: 4em;
 
-}
-  .banner h2{
-    position: absolute;
-    top:0%;
-    font-family: monospace;
-    color: white;
-    left: 1em;
+#nav-icon {
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  top:2em;
+  left: 3em;
+  gap: 0.5em;
+  width: 2em;
+  height: 2em;
+ }
 
-
-}
+  span  {
+  position:relative;
+  margin:auto;
+  width:100%;
+  height:0.3em;
+  background-color: white;
+ }
    
-   .navigation a:hover {
-    color: rgb(107, 219, 253);
-    font-size: 160%;
+   #navigation a:hover {
+    font-size: 170%;
    } 
+   #navigation a::after {
+    content: "";
+    width:0em;
+    height: 0.1rem;
+    display: block;
+    background-color: aliceblue;
+    transition: 0.2s;
+   }
+   #navigation a:hover::after {
+    width:5em;
+   }
 
-   .navigation a   {
+   #navigation a   {
+    white-space: nowrap;
+    position:absolute;
     text-decoration: none;
-    font-size: 140%;
-    color: white;
-    font-family: monospace;
-    transition: ease-in-out 0.1s;
+    font-size: 150%;
+    font-weight: lighter;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: ease-in-out 0.3s;
   }
 
-   .navigation {
+   #navigation {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    position:relative;
-    top:10em;
-    left:100.6em;
+    justify-content: space-evenly;
+    position:fixed;
+    top:5em;
+    width: 0em;
+    height: 15em;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+   }
+   .expanded {
+    width:150em;
    }
    .banner {
+    background-color: black;
     position: fixed;
     width:100%;
     top:0%;
     left:0%;
     z-index: 1;
-    padding-bottom: 3em;
+    padding-bottom: 5em;
    }
   /*universal styles*/
+  .title{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .title h1  {
+      position: absolute;
+      top:0.1em;
+      font-family: monospace;
+      color: white;
+      width:50%;
+      margin: auto;
+      font-size: 4em;
+  
+  }
+    .banner h2{
+      position: absolute;
+      top:0%;
+      font-family: monospace;
+      color: white;
+      left: 1em;
+  
+  
+  }
    body {
     background-color: black;
     
@@ -69,8 +114,6 @@
 
   
    
-   
-
 
   
 

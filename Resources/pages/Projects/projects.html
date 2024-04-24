@@ -12,7 +12,12 @@
             <div class="title">
                 <h1>Projects</h1>
             </div>
-            <nav class="navigation">
+            <div id="nav-icon" onclick=expandNav()>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="navigation">
                 <div>
                     <a href="../../../index.html">Home</a>
                 </div>
@@ -20,33 +25,47 @@
                     <a href="../CV/about.html">About me</a>
                 </div>
                 <div>
-                    <a href="../Contact info/contact.html">contact info</a>
+                    <a href="../Contact info/contact.html">Contact info</a>
                 </div>
             </nav>
         </header>
+       
         <div id="introduction">
             <h2>Welcome to my projects page. please feel free to browse my latest work!</h2>
         </div>
-        
-        <Article id="center-project">
+        <div id="projects">
+        <Article class="center-project">
             <a href="./Prophecy bot/prophecy.html"><h3>THE PROPHECY BOT</h3></a>
-            <a href="./Prophecy bot/prophecy.html"><p>This project uses javascript conditonals and functions to generate randomized messages<br>
-                in response to prompts selected by the user.</p></a>
-            <a href="./Prophecy bot/prophecy.html"><h4>Technology used</h4></a>
-            <a href="./Prophecy bot/prophecy.html"><ul>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-                <li>Git and GitHub</li>
-                <li>Command line and file navigator</li>
-            </ul></a>
-            <a href="./Prophecy bot/prophecy.html"><img src="../../Images/output-onlinegiftools (1).gif"></a>
+           <p>The prophecy Bot is a simple game that creates random messages composed from 3 data sources to produce a random message. 
+            This project has some sentimentality to me as it was my first time experimenting with the fundamentals of JavaScript. 
+            By it’s nature of being a project designed to test basic programming skills it uses simple concepts such as Conditionals, switch case statements etc.</p>
         </Article>
-        
-        <script>
+        <Article class="center-project">
+            <a href="./Prophecy bot/prophecy.html"><h3>Galactic-Playlist</h3></a>
+           <p>The Galactic-Playlist is a single page react-app making use of Spotify API. 
+            This app is able to use it’s corresponding API to search for songs on the Spotify app by name and genre, 
+            create a new play-list and then save said play-list on to a user’s Spotify account. 
+            This app  uses  function components instead. </p>
+        </Article>
+        </div>
+        <script defer>
+            let navigation = document.getElementById('navigation');
+            let navIcon = document.getElementById('nav-icon');
+                function expandNav(event) {
+                 var x = navigation;
+                
+                 if (x.style.width !== '0em') {
+                    x.style.width = '0em';
+                 } else {
+                    x.style.width = '15em';  
+                 }
+                 
+                 x.classList.toggle('expanded')
+                }
             const  project = document.getElementById('center-project')
             project.onmouseover= function(){
                 project.style.border = 'solid white' ;
-                project.style.cursor = 'pointer' 
+               
                  
             }
             project.onmouseout = function(){
@@ -56,3 +75,4 @@
         <script src="../../JavaScript/main.js"></script>
     </body>
 </html>    
+

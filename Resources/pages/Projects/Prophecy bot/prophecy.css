@@ -14,11 +14,11 @@
  
     #oracle  {
         position: relative;
-        top:13em;
+        top:8em;
         display: block;
         margin-left:auto;
         margin-right: auto;
-        height: 35em;
+        height: 15em;
     }
 
 
@@ -78,7 +78,28 @@
             top: 6px;
         }
 
+        .Project-details {
+        position: relative;
+        margin:auto;
+        width:50%;
+        text-align: center;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap:2em;
+        }
+
+        .Project-display {
+        position:relative;
+        margin:auto;
+        width: 50%;
+        height:25em;
+        }
+
+
+
         /* smart phone prophecy */
+        /*
 
 
 @media (min-width:320px) {
@@ -151,6 +172,8 @@
 }
 
 /*Tablet Prophecy*/
+
+/*
 
 @media (min-width:768px) {
     .Prophecy-navigation {
@@ -226,6 +249,7 @@
 
 
 /*laptop Prophecy page*/
+/*
 
 @media (min-width:1024px) {
     .instruction {

@@ -13,7 +13,12 @@
             <div class="title">
                 <h1>CONTACT</h1>
             </div>
-            <nav class="navigation">
+            <div id="nav-icon" onclick=expandNav()>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="navigation">
                 <div>
                     <a href="../../../index.html">Home</a>
                 </div>
@@ -36,6 +41,19 @@
             </ul>
         </div>
         <script>
+             let navigation = document.getElementById('navigation');
+            let navIcon = document.getElementById('nav-icon');
+                function expandNav(event) {
+                 var x = navigation;
+                
+                 if (x.style.width !== '0em') {
+                    x.style.width = '0em';
+                 } else {
+                    x.style.width = '15em';  
+                 }
+                 
+                 x.classList.toggle('expanded')
+                }
        let Linked = document.getElementById('Linked');
        let gitHub = document.getElementById('gitHub');
        let email = document.getElementById('email');

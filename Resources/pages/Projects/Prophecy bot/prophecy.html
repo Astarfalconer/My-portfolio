@@ -10,10 +10,14 @@
     <body>
         <header class="banner">
             <div class="title">
-                <h2>PROPHECY</h2>
-                <h1>BOT</h1>
+                <h1>PROPHECY-BOT</h1>
             </div>
-            <nav class="Prophecy-navigation">
+            <div id="nav-icon" onclick=expandNav()>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="navigation">
                 <div>
                     <a href="../../../../index.html">Home</a>
                 </div>
@@ -24,7 +28,7 @@
                     <a href="../../CV/about.html">About me</a>
                 </div>
                 <div>
-                    <a href="../../Contact info/contact.html">contact info</a>
+                    <a href="../../Contact info/contact.html">Contact info</a>
                 </div>
             </nav>
         </header>
@@ -49,6 +53,21 @@
     
                </div>
           </div>
+          <article class="Project-details">
+            <p>The prophecy bot program is a made up of three major components, 
+                the first of these is the “validInputChecker” . This function exists to ensure that only the correct inputs; past, 
+                present and future are accepted. If for any reason an alternative input is made the program will instead return 
+                “I apologise but this terminal only delves into prophecy revolving around the past, 
+                present and future”.</p>
+            <img class="Project-display" src="../../../Images/valid input checker.jpg">
+            <P>The second part of the project is a series of message components; “messagecomponent1”, “messagecomponent2”, “messagecomponent3” these three data sets are what make up each message. 
+                Within each of these functions are switch cases that house a segment of each message combined with an 
+                if statement to determine which inputs has been used with the 
+                “Math.random” method used to select the switch case.</P>
+            <img class="Project-display"src="../../../Images/message component.jpg">
+            <p></p>
+            <img class="Project-display"src="../../../Images/combiner code.jpg">
+          </article>
             <script>
                 
             </script>
@@ -222,6 +241,19 @@ prophecy.innerHTML = '"' + prophecyBot('present') + '"'
 future.onclick = function(){
 prophecy.innerHTML = '"' + prophecyBot('future') + '"'
 }
+let navigation = document.getElementById('navigation');
+            let navIcon = document.getElementById('nav-icon');
+                function expandNav(event) {
+                 var x = navigation;
+                
+                 if (x.style.width !== '0em') {
+                    x.style.width = '0em';
+                 } else {
+                    x.style.width = '15em';  
+                 }
+                 
+                 x.classList.toggle('expanded')
+                }
                 
             </script>
         </main>

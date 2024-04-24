@@ -1,31 +1,45 @@
-#center-project h4 {
-    color: white;
-    position:relative;
-    bottom:-2em;
-    top:-1em;
-
-
-}
-
-#center-project ul {
+#projects {
     position: relative;
-    left: -1.8em;
-    bottom: 2em;
+    top: 6em;
+    display: flex;
+    flex-direction: column;
+    gap:5em;
 }
 
-#center-project li {
-    color: white;
-    font-family: monospace;
-}
-
-#center-project img {
-    height:2.5em;
+.center-project {
     position: relative;
-    top:-1.5em;
-    left: 0.1em;
+    margin: auto;
+    width:50%;
+    text-align: center;
+    display: block;
+    overflow: auto;
+    font-size: 1rem;
+    font-weight: lighter;
 }
+.center-project::before {
+    content: "";
+    position: relative;
+    margin:auto;
+    width:45em;
+    height: 0.1rem;
+    display: block;
+    background-color: aliceblue;
+    transition: 0.2s;
+   }
 
-#center-project a{
+.center-project::after {
+    content: "";
+    position: relative;
+    margin:auto;
+    width:45em;
+    height: 0.1rem;
+    display: block;
+    background-color: aliceblue;
+    transition: 0.2s;
+   }
+
+
+.center-project a{
     color: white;
     font-family: monospace;
 }
@@ -42,7 +56,22 @@
 
 }
 
-/*smart phone projects page*/
+h3::after {
+    content: "";
+    position: relative;
+    margin:auto;
+    width:0em;
+    height: 0.1rem;
+    display: block;
+    background-color: aliceblue;
+    transition: 0.2s;
+   }
+
+   h3:hover::after {
+    width:11em;
+   }
+
+/*smart phone projects page*/ /*
 @media (min-width:320px) {
     #introduction {
      font-family: monospace;
@@ -107,7 +136,7 @@
     font-family: monospace;
 }
 
-/* laptop Projects page*/
+/* laptop Projects page*/ /*
 
 @media (min-width:1024px) {
     #introduction {
