@@ -98,6 +98,11 @@
     
     }
 
+    h3 {
+      color: white;
+      font-family: monospace;
+    }
+
     p{
         color: white;
         font-family: monospace;

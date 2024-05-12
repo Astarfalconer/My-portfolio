@@ -97,6 +97,27 @@
         }
 
 
+        .Project-entry::before {
+            content: "";
+            position: relative;
+            margin:auto;
+            width:47em;
+            height: 0.1rem;
+            display: block;
+            background-color: aliceblue;
+            transition: 0.2s;
+           }
+        
+           .Project-entry::after {
+            content: "";
+            position: relative;
+            margin:auto;
+            width:47em;
+            height: 0.1rem;
+            display: block;
+            background-color: aliceblue;
+            transition: 0.2s;
+           }
 
         /* smart phone prophecy */
         /*

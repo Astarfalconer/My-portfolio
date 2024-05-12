@@ -54,20 +54,34 @@
                </div>
           </div>
           <article class="Project-details">
+            <div class="Project-entry">
+                <h3>Vaild Input Checker</h3>
             <p>The prophecy bot program is a made up of three major components, 
                 the first of these is the “validInputChecker” . This function exists to ensure that only the correct inputs; past, 
                 present and future are accepted. If for any reason an alternative input is made the program will instead return 
                 “I apologise but this terminal only delves into prophecy revolving around the past, 
                 present and future”.</p>
-            <img class="Project-display" src="../../../Images/valid input checker.jpg">
-            <P>The second part of the project is a series of message components; “messagecomponent1”, “messagecomponent2”, “messagecomponent3” these three data sets are what make up each message. 
+                <img class="Project-display" src="../../../Images/valid input checker.jpg">
+            </div>
+            <div class="Project-entry">
+                <h3>Message Components</h3>
+                <P>The second part of the project is a series of message components; “messagecomponent1”, “messagecomponent2”, “messagecomponent3” these three data sets are what make up each message. 
                 Within each of these functions are switch cases that house a segment of each message combined with an 
                 if statement to determine which inputs has been used with the 
                 “Math.random” method used to select the switch case.</P>
-            <img class="Project-display"src="../../../Images/message component.jpg">
-            <p></p>
+                <img class="Project-display"src="../../../Images/message component.jpg">
+            </div>
+            <div class="Project-entry">
+                <h3>The Combiner</h3>
+                <p>The final part of the program is the combiner  function called “prophecyBot” that saves all previous 
+                functions as local variables. This includes the “validInputChecker” saved as “seekerChoice”. 
+                The 3 message components are saved as “component1”, “component2” and “component3” respectively 
+                all with seeker choice as an argument. The function ends with an if statement making use of 
+                the logical OR operator to ensure seeker choice returns a valid argument. 
+                If its true the function will return the three message components in a sequence.</p>
             <img class="Project-display"src="../../../Images/combiner code.jpg">
-          </article>
+          </div>
+        </article>
             <script>
                 
             </script>
