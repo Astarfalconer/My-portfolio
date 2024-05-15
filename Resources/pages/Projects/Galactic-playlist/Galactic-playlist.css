@@ -1,0 +1,67 @@
+.project-intro {
+position: relative;
+margin: auto;
+width:80%;  
+height: 50em;
+top: 5em;
+text-align: center;
+font-size: 1rem;
+display: flex;
+flex-direction: column;
+
+}
+
+#project {
+position: relative;
+margin: auto;
+width:100%;
+height:35em;
+background-image: url(../../../Images/GalacticPlaylist\ frontpage.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+top:-5em;
+}
+
+
+
+.Project-details {
+    position: relative;
+    top:7em;
+    margin:auto;
+    width:50%;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    }
+
+    .Project-display {
+    position:relative;
+    margin:auto;
+    width: 50em;
+    height:25em;
+    }
+
+
+    .Project-entry::before {
+        content: "";
+        position: relative;
+        margin:auto;
+        width:50em;
+        height: 0.1rem;
+        display: block;
+        background-color: aliceblue;
+        transition: 0.2s;
+       }
+    
+       .Project-entry::after {
+        content: "";
+        position: relative;
+        margin:auto;
+        width:50em;
+        height: 0.1rem;
+        display: block;
+        background-color: aliceblue;
+        transition: 0.2s;
+       }
