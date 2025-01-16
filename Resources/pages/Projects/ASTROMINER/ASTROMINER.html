@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Galactic-playlist
+        </title>
+        <link rel="stylesheet" href="../../../CSS/styles.css">
+        <link rel="stylesheet" href="Galactic-playlist.css">
+    </head>
+    <body>
+        <header class="banner">
+            <div class="title">
+                <h1>ASTROMINER</h1>
+            </div>
+            <div id="nav-icon" onclick=expandNav()>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="navigation">
+                <div>
+                    <a href="../../../../index.html">Home</a>
+                </div>
+                <div>
+                    <a href="../projects.html">Projects</a>
+                </div>
+                <div >
+                    <a href="../../CV/about.html">About me</a>
+                </div>
+                <div>
+                    <a href="../../Contact info/contact.html">Contact info</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="project-intro">
+                <p>This App is designed to use the Spotify API to search for songs, create playlists and save said 
+                    playlists to a user’s Spotify account. This is my first React application, my goals  when making 
+                    this were to practice core concepts of the framework, get used to the react work flow and gain experience 
+                    working with an API. </p>
+                <div id="project"></div>  
+            </div>
+          <article class="Project-details">
+            <div class="Project-entry">
+                <h3>App Component</h3>
+            <p>The App component contains all other components. This file also contains all the hooks that will be passed down 
+                through out the app. These include the “searchResults” array and the “playlistTracks” array. The former is a list 
+                of songs acquired using the “search” hook the latter is an array of songs that have been added via the “addTrack” 
+                hook. The other hooks in this file are “updatePlaylistName”, “removeTrack” and “savePlaylist”</p>
+                <img class="Project-display" src="../../../Images/App component.jpg">
+            </div>
+            <div class="Project-entry">
+                <h3>Search Results Component</h3>
+                <P>The SearchResults component is rendered on the left side of the screen and presents the list of songs acquired 
+                    by the “search” hook. It does this by rendering a TrackList component and passes on two props; “onAdd” and 
+                    “searchResults”.TrackList takes these props and renders a Track for each item in the “searchResults” 
+                    array and passes down “onAdd” which is how the user is able to add each track to the new playlist.</P>
+                <img class="Project-display"src="../../../Images/SearchResults component.jpg">
+            </div>
+            <div class="Project-entry">
+                <h3>Playlist Component</h3>
+                <p>The PlayList component is rendered on the right side of the screen and presents the items in the “playlistTracks” 
+                    array which are added through the “addTrack” hook, the songs originally come from the “searchResults” array. 
+                    It does this by rendering a TrackList component and passes on three props; “onRemove”  , “playlistTracks” 
+                    and “isRemoval”. takes these props and renders a Track for each item in the “playlistTracks” array 
+                    and passes down “onRemove” which is how the user is able to remove each track from the new playlist. 
+                    The “isRemoval” prop is used to determine which element the Track component render, if it’s value is 
+                    true “-“ is shown and if it is false “+” is shown.</p>
+            <img class="Project-display"src="../../../Images/playlist component.jpg">
+          </div>
+          <div class="Project-entry">
+            <h3>Asynchronous Logic</h3>
+            <p>To handle all the asynchronous logic I created a file called “spotify.js”. Spotify uses the Auth 2.0 authentication 
+                system meaning that for every request I’m going to need to generate a new token, the logic for this can be found in 
+                the first function “getAccessToken()”. </p>     
+        <img class="Project-display"src="../../../Images/getAccessToken.jpg">
+             <p>The second function is what will handle my searches and accepts a search term as an argument, 
+                it will use said term when making it’s fetch request and use the token granted by “getAccessToken()”  
+                as the value for the header object’s authorization key. It will then convert the response into a JSON object.</p>
+                <img class="Project-display"src="../../../Images/searchFunction.jpg">
+            <p>The final function in this module is the “savePlaylist” function which takes in two arguments, 
+                a name and the track uris . within the function body it follows three steps. 
+                Step one is identifying the users Spotify account and saving it as  a variable. 
+                Step two is creating a playlist on said account and saving its Id as a variable and 
+                using the first argument to name it. Step 3 is using the two previous variables </p>
+                <img class="Project-display"src="../../../Images/savePlaylistFunction.jpg">
+      </div>
+        </article>
+
+
+
+        <script>
+            let navigation = document.getElementById('navigation');
+            let navIcon = document.getElementById('nav-icon');
+                function expandNav(event) {
+                 var x = navigation;
+                
+                 if (x.style.width !== '0em') {
+                    x.style.width = '0em';
+                 } else {
+                    x.style.width = '15em';  
+                 }
+                 
+                 x.classList.toggle('expanded')
+                }
+        </script>
